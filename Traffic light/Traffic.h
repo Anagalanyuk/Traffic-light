@@ -1,26 +1,12 @@
 #pragma once
 
 #include"IState.h"
-
+class IState;
 class TrafficLight // context
 {
 public:
-	void SetState(IState* state)
-	{
-		this->state = state;
-	}
-
-	void Start()
-	{
-		std::cout << "S - Start" << std::endl;
-		std::cout << "P - Pause" << std::endl;
-		std::cout << "E - Exit" << std::endl;
-
-		while (true)
-		{
-			state->Update(this);
-		}
-	}
+	void SetState(IState* state);
+	void Start();
 private:
-	IState* state = nullptr;
+	IState* m_state = nullptr;
 };

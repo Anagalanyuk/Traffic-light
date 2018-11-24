@@ -1,24 +1,21 @@
-#pragma once
+#include<iostream>
 
-#include<Windows.h>
+#include"YallowLight.h"
 
-#include"IState.h"
+#include"Traffic.h"
 
-#include"BaseState.h"
+#include"Greenlight.h"
 
-#include"Yalowlight.h"
-
-class RedLight : public BaseState, public IState
+void YellowLight::Update(TrafficLight* traffic)
 {
-public:
-	virtual void Update(TrafficLight* traffic) override
+	for (int i = 0; i < 4; ++i)
 	{
 		offSet = 1;
 		width = 5;
 		point.X = x;
-		point.Y = y;
+		point.Y = y + 6;
 
-		SetConsoleTextAttribute(handle, FOREGROUND_RED | FOREGROUND_INTENSITY);
+		SetConsoleTextAttribute(handle, FOREGROUND_GREEN | FOREGROUND_RED | FOREGROUND_INTENSITY);
 		for (int i = 0; i < 5; ++i)
 		{
 			for (int j = 0; j < width; ++j)
@@ -30,7 +27,7 @@ public:
 			if (i < 2)
 			{
 				width += 2;
-				point.X = x - i - offSet;
+				point.X = x - i - 1;
 			}
 			else
 			{
@@ -40,18 +37,21 @@ public:
 			}
 			point.Y++;
 		}
+		Sleep(500);
 		DeleteState();
-		traffic->SetState(new YelowLight);
+		Sleep(500);
 	}
 
-	void DeleteState()
+	traffic->SetState(new GreenLight);
+};
+
+void YellowLight::DeleteState()
+{
 	{
 		offSet = 1;
 		width = 5;
 		point.X = x;
-		point.Y = y;
-		Sleep(2000);
-
+		point.Y = y + 6;
 		for (int i = 0; i < 5; ++i)
 		{
 			for (int j = 0; j < width; ++j)
@@ -63,7 +63,7 @@ public:
 			if (i < 2)
 			{
 				width += 2;
-				point.X = x - i - offSet;
+				point.X = x - i - 1;
 			}
 			else
 			{
@@ -74,4 +74,4 @@ public:
 			point.Y++;
 		}
 	}
-};
+}

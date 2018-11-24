@@ -115,15 +115,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Green Light.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Red Light.cpp" />
+    <ClCompile Include="Traffic.cpp" />
+    <ClCompile Include="YellowLight.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseState.h" />
     <ClInclude Include="Greenlight.h" />
     <ClInclude Include="IState.h" />
-    <ClInclude Include="RedLight.h" />
+    <ClInclude Include="Red Light.h" />
     <ClInclude Include="Traffic.h" />
-    <ClInclude Include="Yalowlight.h" />
+    <ClInclude Include="YallowLight.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

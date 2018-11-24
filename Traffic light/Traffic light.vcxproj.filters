@@ -18,6 +18,18 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Green Light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Traffic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="YellowLight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Red Light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IState.h">
@@ -29,13 +41,13 @@
     <ClInclude Include="BaseState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RedLight.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Yalowlight.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Greenlight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="YallowLight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Red Light.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

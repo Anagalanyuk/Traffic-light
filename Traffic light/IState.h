@@ -1,6 +1,7 @@
 #pragma once
 
 #include"Traffic.h"
+
 class TrafficLight;
 class IState // State
 {
