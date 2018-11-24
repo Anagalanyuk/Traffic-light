@@ -115,6 +115,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseState.h" />
+    <ClInclude Include="Greenlight.h" />
+    <ClInclude Include="IState.h" />
+    <ClInclude Include="RedLight.h" />
+    <ClInclude Include="Traffic.h" />
+    <ClInclude Include="Yalowlight.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
