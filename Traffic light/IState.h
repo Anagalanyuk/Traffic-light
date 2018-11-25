@@ -3,7 +3,7 @@
 #include"Traffic.h"
 
 class TrafficLight;
-class IState // State
+class IState
 {
 public:
 	virtual void Update(TrafficLight* traffic) = 0;

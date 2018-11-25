@@ -125,6 +125,7 @@
     <ClInclude Include="BaseState.h" />
     <ClInclude Include="Greenlight.h" />
     <ClInclude Include="IState.h" />
+    <ClInclude Include="Key.h" />
     <ClInclude Include="Red Light.h" />
     <ClInclude Include="Traffic.h" />
     <ClInclude Include="YallowLight.h" />

@@ -1,12 +1,16 @@
 #pragma once
 
 #include"IState.h"
+
 class IState;
-class TrafficLight // context
+class TrafficLight
 {
 public:
 	void SetState(IState* state);
 	void Start();
+	bool GetUpdate();
 private:
 	IState* m_state = nullptr;
+	int key = 0;
+	bool isUpdate = true;
 };
