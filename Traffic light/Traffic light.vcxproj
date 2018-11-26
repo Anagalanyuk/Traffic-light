@@ -128,7 +128,7 @@
     <ClInclude Include="Key.h" />
     <ClInclude Include="Red Light.h" />
     <ClInclude Include="Traffic.h" />
-    <ClInclude Include="YallowLight.h" />
+    <ClInclude Include="YellowLight.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -2,7 +2,7 @@
 
 #include"Red Light.h"
 
-#include"YallowLight.h"
+#include"YellowLight.h"
 
 #include"Traffic.h"
 

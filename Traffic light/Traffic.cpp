@@ -74,3 +74,8 @@ void TrafficLight::Start()
 		}
 	}
 }
+
+TrafficLight::~TrafficLight()
+{
+	delete m_state;
+}

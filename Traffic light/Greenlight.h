@@ -2,7 +2,6 @@
 
 #include"Traffic.h"
 
-
 #include"BaseState.h"
 
 #include"IState.h"
